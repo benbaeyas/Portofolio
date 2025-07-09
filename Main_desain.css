@@ -1,0 +1,262 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+nav a {
+  color: gray;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  margin-left: 35px;
+}
+
+nav a:hover,
+nav a.active {
+  color: white;
+}
+
+/* Sections */
+section {
+  padding: 50px 5%;
+  min-height: 100vh;
+  background-color: #1f242d;
+  color: #fff;
+  transition: all 0.8s ease-out;
+}
+
+section:nth-child(odd) {
+  background-color: #323946;
+}
+
+section h1, section h2, section h3 {
+  margin-bottom: 1rem;
+}
+
+/* Home Section */
+
+#home {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(170deg, #1a1a1a, #1a1a1a, #323946,#323946);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.home-deskripsi {
+  display: flex;
+  gap: 1rem;
+}
+
+.home-deskripsi h1 {
+  font-size: 2.5rem;
+}
+
+.home-deskripsi p {
+  font-size: 1.2rem;
+}
+
+.home-deskripsi button {
+  padding: 12px 25px;
+  border: none;
+  background-color: #00ffcc;
+  color: #1a1a1a;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+.home-deskripsi button:hover {
+  background-color: #00cca3;
+}
+
+.home-deskripsi img {
+  width: 500px;
+  height: 500px;
+  margin-top: -100px;
+}
+
+.home-perkenalan {
+  margin-top: 100px;
+}
+
+/* About Section */
+.deskripsi {
+  margin-left: 10px;
+  text-align: justify;
+}
+
+.about-me {
+  display: flex;
+}
+
+.deskripsi h3 {
+  margin-top: 50px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 2rem;
+
+}
+
+.skills img {
+  max-width: 20%;
+  max-height: 20%;
+  
+}
+
+.skill-tag {
+  background-color: #2b303b;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Projects Section */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-item {
+  background-color: #2b303b;
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap; /* Agar bisa responsif */
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-list-item {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Membuat ruang antara elemen dan push a ke bawah */
+    padding-right: 2rem;
+}
+
+.project-item h3 {
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.project-item p {
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.project-item a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  align-self: flex-start; /* Optional: untuk posisi horizontal */
+}
+
+.image {
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  max-height: 400px;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.icon {
+  max-width: 8%;
+  max-height: 8%;
+  margin-right: 20px;
+}
+
+.project-icon {
+  margin-top: 2.1rem;
+}
+
+.gambar-pendukung {
+  border-radius: 10px;
+  max-height: 50%;
+  max-width: 50%;
+}
+
+.project-item video{
+  border-radius: 10px;
+}
+
+/* --- Footer Section --- */
+footer {
+    background-color: #1a1a1a; /* Background gelap, sama dengan header */
+    color: var(--secondary-color); /* Teks putih */
+    padding: 20px 5%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Garis tipis di atas footer */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.9em;
+    color: white; /* Sedikit lebih redup */
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white; /* Warna ikon putih */
+    font-size: 1.5em; /* Ukuran ikon */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px); /* Efek melayang saat hover */
+}
